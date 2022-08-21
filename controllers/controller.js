@@ -40,8 +40,6 @@ exports.sendNewsLetter = async (req, res) => {
 
           if (validationPass.status) {
             // CALL RABBITMQ SERVICE
-            console.log('---------------------rows-->>>>>>>', rows)
-            // emailQueue(rows[0]);
             await producer.publishMessage(process.env.RABBITMQ_EMAIL_SEND_JOB, rows[0])
             return res.status(202).json({
               status: true,

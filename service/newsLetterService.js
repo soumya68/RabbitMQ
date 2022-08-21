@@ -11,7 +11,6 @@ const producer = new Producer();
 const dir = process.env.DIR;
 exports.sendEmail = async (email, content, name) => {
     try {
-        console.log("-----------------email------>", email)
         const userData = await Users.findOne({ email }, { email: 1, firstName: 1, lastName: 1 });
         if (userData) {
             const { firstName, lastName } = userData;
