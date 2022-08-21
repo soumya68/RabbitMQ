@@ -18,7 +18,9 @@ STEPS FOR PM2
 2.pm2 start ecosystem.config.js
 3.pm2 logs
 
-NOTE - Only after above steps first add a user with valid email-id & use that email-id in csv file
+NOTE
+----
+Only after above steps first add a user with valid email-id & use that email-id in csv file
 
 STEP TO TEST  addUser API 
 -------------------------
