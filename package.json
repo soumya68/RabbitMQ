@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "\"sports app\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server.js",
+    "rabbitMq": "nodemon ./rabbitMq/subscriber.js"
+  },
+  "author": "Soumya Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.2",
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "joi": "17.6.0",
+    "moment": "2.29.1",
+    "mongoose": "^6.5.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "2.18.1",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {}
+}
